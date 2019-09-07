@@ -1,0 +1,5 @@
+<select [(ngModel)]="selectedSourceId" (change)="processSelectedValue($event)">
+  <option *ngFor="let source of sources|async" [value]=source.id>
+    {{source.name}}
+  </option>
+</select>

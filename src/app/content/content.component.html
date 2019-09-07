@@ -1,0 +1,7 @@
+<div *ngFor="let para of articlesData|async">
+  <div>
+    <img class="image-class" src={{para.urlToImage}}>
+    <p>{{para.description}}</p>
+  </div>
+  <button>Continue Reading</button>
+</div>
